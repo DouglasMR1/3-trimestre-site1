@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Redes Sociais - Curitiba</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <h1>Relatório de Redes Sociais - Curitiba</h1>
+        <nav>
+            <a href="index.html">Curitiba</a>
+        </nav>
+    </header>
+    <main class="graficos-section">
+        <section id="graficos-container" class="graficos-container">
+            <!-- Contêiner para o gráfico da região de Curitiba -->
+            <div id="grafico-curitiba" style="width:600px; height:400px;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por DG</p>
+    </footer>
+    <script>
+        // Dados de redes sociais para a região de Curitiba
+        const dataCuritiba = [
+            { x: ['Facebook', 'Instagram', 'Twitter', 'TikTok'], y: [1500, 1800, 700, 1200], type: 'bar' }
+        ];
+        const layoutCuritiba = { title: 'Usuários em Curitiba' };
+        Plotly.newPlot('grafico-curitiba', dataCuritiba, layoutCuritiba);
+    </script>
+</body>
+</html>
